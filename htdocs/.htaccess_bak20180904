@@ -1,0 +1,69 @@
+<IfModule mod_headers.c>
+    RequestHeader set X-Prerender-Token "luF2U2eoXt2P0kKjRIrK"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    <IfModule mod_proxy_http.c>
+        RewriteCond %{HTTP_USER_AGENT} baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator|powermapper|RavenCrawler|SortSiteCmd [NC,OR]
+        RewriteCond %{QUERY_STRING} _escaped_fragment_
+                # Only proxy the request to Prerender if it's a request for HTML
+        RewriteRule ^(?!.*?(\.js|\.css|\.xml|\.less|\.png|\.jpg|\.jpeg|\.gif|\.pdf|\.doc|\.txt|\.ico|\.rss|\.zip|\.mp3|\.rar|\.exe|\.wmv|\.doc|\.avi|\.ppt|\.mpg|\.mpeg|\.tif|\.wav|\.mov|\.psd|\.ai|\.xls|\.mp4|\.m4a|\.swf|\.dat|\.dmg|\.iso|\.flv|\.m4v|\.torrent|\.ttf|\.woff))(index.html)?(.*) http://service.prerender.io/https://%{HTTP_HOST}/$3 [P,L]
+    </IfModule>
+</IfModule>
+
+php_value max_execution_time 180
+php_value memory_limit 1024M
+<IfModule mod_headers.c>
+#    Header add Access-Control-Allow-Origin "*"
+#    Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+#    Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+</IfModule>
+#
+SetEnv MAGICK_THREAD_LIMIT 1
+php_value upload_max_filesize 64M
+php_value post_max_size 64M
+php_value max_execution_time 300
+php_value max_input_time 300
+
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# add a trailing slash to /wp-admin
+RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^(wp-(content|admin|includes).*) $1 [L]
+RewriteRule ^(.*\.php)$ $1 [L]
+RewriteRule . index.php [L]
+
+# Block WordPress xmlrpc.php requests
+<Files xmlrpc.php>
+     order deny,allow
+     deny from all
+     #allow from 50.84.75.186
+</Files>
+
+## CORS for mapping plugin
+#Header add Access-Control-Allow-Origin "*"
+#Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+#Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+
+
+# Wordfence WAF
+<Files ".user.ini">
+<IfModule mod_authz_core.c>
+	Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+	Order deny,allow
+	Deny from all
+</IfModule>
+</Files>
+
+# END Wordfence WAF

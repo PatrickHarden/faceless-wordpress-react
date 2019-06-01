@@ -1,0 +1,118 @@
+logs
+# Created by https://www.gitignore.io/api/phpstorm
+
+### PhpStorm ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+.idea/.DS_Store
+htdocs/wp-content/.DS_Store
+htdocs/wp-content/plugins/.DS_Store
+wordfence-waf.php
+wp-content/wflogs
+wp-content/wflogs/
+
+## User-specific stuff: ##
+.idea
+.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.vagrant/
+bootstrap.sh
+Vagrantfile
+htdocs/wp-content/plugins/imaginuity-centers3/js/node_modules
+htdocs/wp-content/uploads/
+htdocs/wp-content/uploads
+htdocs/.htaccess
+htdocs/wp-config.php
+
+## Sensitive or high-churn files: ##
+
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+# Mongo Explorer plugin:
+.idea/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+/htdocs/wp-content/plugins/imaginuity-centers3/js/npm-debug.log
+
+.DS_Store
+htdocs/.DS_Store
+htdocs/wp-content/plugins/imaginuity-centers3/js/.DS_Store
+htdocs/wp-content/plugins/imaginuity-centers3/.DS_Store
+htdocs/wp-content/plugins/.DS_Store
+
+## Plugins
+/htdocs/wp-content/plugins/wordpress-admin-style-master/
+
+## Themes
+# JLL
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/JLL/css/main.css.map
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/JLL/css/customizations.css.map
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/JLL/node_modules/
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/JLL/css/slick.css.map
+
+# Mockingbird Station
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/MockingbirdStation/node_modules/
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/MockingbirdStation/css/customizations.css.map
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/MockingbirdStation/css/main.css.map
+
+# Grocery Anchor v1
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/GroceryAnchor-v1/node_modules/
+
+# Grocery Anchor v2
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/GroceryAnchor-v2/node_modules/
+
+# Regional v1
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/Regional-v1/node_modules/
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/GroceryAnchor-v1/npm-debug.log
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/Regional-v1/app/css/main.css.map
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/Regional-v1/app/css/main.css
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/GroceryAnchor-v1/app/css/main.css.map
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/GroceryAnchor-v1/app/css/main.css
+
+# Arrow
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/Arrow/npm-debug.log
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/Arrow/node_modules/
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/JLL-TLS/node_modules/
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/Arrow/node_modules/
+
+# Manhattan Village
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/ManhattanVillage/node_modules/
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/ManhattanVillage/npm-debug.log
+
+# Regional v2
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/Regional-v2/node_modules/
+
+# Liberty Center
+/htdocs/wp-content/plugins/imaginuity-centers3/js/themes/LibertyCenter/node_modules/

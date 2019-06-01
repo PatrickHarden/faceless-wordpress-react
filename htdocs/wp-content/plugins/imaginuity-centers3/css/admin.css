@@ -1,0 +1,13 @@
+.dashboard_widget_links .inside li {
+    display: inline-block;
+    margin: 5px;
+}
+
+#wp-admin-bar-my-sites-list {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.maintenance-notice p{
+    font-size: 1.1rem;
+}
