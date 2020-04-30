@@ -37,7 +37,7 @@
     "html-entities": "^1.2.0",
     "html-webpack-plugin": "^3.0.5",
     "htmlparser2": "^3.9.2",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "moment": "^2.17.1",
     "moment-range": "^3.0.2",
     "node-sass": "^4.9.3",
