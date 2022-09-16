@@ -16,7 +16,7 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-2": "^6.22.0",
-    "bootstrap": "~3.3.7",
+    "bootstrap": "~3.4.1",
     "crypto-js": "^3.1.9-1",
     "entities": "^1.1.1",
     "eslint": "^3.19.0",
