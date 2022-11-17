@@ -58,7 +58,7 @@
     "resolve-url-loader": "^2.1.0",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.13.2",
-    "webpack": "^2.2.1",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^2.4.1",
     "webpack-s3-plugin": "^1.0.0-rc.0",
     "wordpress-rest-api": "^0.8.0"
@@ -73,7 +73,7 @@
     "css-loader": "^0.28.2",
     "es6-promise": "^4.0.5",
     "file-loader": "^0.11.1",
-    "html-webpack-plugin": "^2.24.1",
+    "html-webpack-plugin": "^5.5.0",
     "json-loader": "^0.5.4",
     "sass": "^0.5.0",
     "sass-loader": "^6.0.2",
